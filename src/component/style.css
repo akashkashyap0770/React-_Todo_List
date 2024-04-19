@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(20, 0, 39);
+    color: aliceblue;
+    background-color: black;
+    padding: 6rem;
+}
+
+.main-div {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    text-align: center;
+    /* height: 100vh; */
+    width: 50rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    background-color: gray;
+}
+
+.child-div {
+    line-height: 2rem;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    height: 10rem;
+    width: 10rem;
+}
+
+figcaption {
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.add-items {
+    padding-bottom: 3rem;
+}
+
+.add-items .fa-plus {
+    display: inline-block;
+    position: relative;
+    right: 5rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: gray;
+    transition: all .3s ease-out;
+}
+
+.add-items .add-toggle-btn {
+    position: relative;
+    right: 4rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: gray;
+    transition: all .3s ease-out;
+}
+
+.fa-plus:hover {
+    cursor: pointer;
+    color: chartreuse;
+}
+
+.form-control {
+    height: 5rem;
+    width: 40rem;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.add-btn {
+    font-size: 2rem;
+    color: yellow;
+}
+
+.showItems {
+    /* display: flex;
+    flex-direction: column; */
+    /* height: 30rem; */
+    /* width: 40rem; */
+    /* padding: 1rem; */
+    /* margin-bottom: 3rem; */
+    /* font-size: 2rem; */
+    /* color: aliceblue; */
+    /* background-color: wheat; */
+}
+
+.each-item {
+    height: 5rem;
+    width: 40rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: aliceblue;
+    background-color:purple;
+}
+
+.each-item h3 {
+    display: flex;
+    padding-left: 1.2rem;
+}
+
+.rm-items button {
+    height: 4rem;
+    width: 20rem;
+    background-color: rgb(216, 216, 10);
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all .3s ease-out;
+}
+
+.rm-items button:hover {
+    background-color: yellow;
+}
+
+.todo-btn .fa-pen-to-square {
+    position: relative;
+    bottom: 1.5rem;
+    left: 14rem;
+    font-size: 2rem;
+    color: green;
+    transition: all .3s ease-out;
+}
+
+.fa-pen-to-square:hover {
+    color: rgb(96, 184, 8);
+}
+
+.todo-btn .fa-trash {
+    position: relative;
+    bottom: 1.5rem;
+    left: 16rem;
+    font-size: 2rem;
+    color: rgb(175, 5, 5);
+    transition: all .3s ease-out;
+}
+
+.fa-trash:hover {
+    color: red;
+}
+
+/* Media query for tablet devices */
+@media screen and (min-width: 468px) and (max-width: 768px) {
+
+    .main-div {
+        width: 40rem;
+    }
+
+    .img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .form-control {
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+
+    .each-item {
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+
+    .todo-btn .fa-pen-to-square {
+        left: 10rem;
+    }
+
+    .todo-btn .fa-trash {
+        left: 12rem;
+    }
+   
+}
+
+@media screen and (min-width: 320px) and (max-width: 468px) {
+
+    .main-div {
+        width: 30rem;
+    }
+
+    .img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .form-control {
+        width: 25rem;
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .add-items .fa-plus {
+        top: 0.5rem;
+        right: 3rem;
+        font-size: 1.8rem;
+    }
+
+    .add-items .add-toggle-btn {
+        font-size: 1.8rem;
+    }
+
+    .each-item {
+        width: 25rem;
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .todo-btn .fa-pen-to-square {
+        left: 8rem;
+        font-size: 1.8rem;
+
+    }
+
+    .todo-btn .fa-trash {
+        left: 10rem;
+        font-size: 1.8rem;
+    }
+
+    .rm-items button {
+        width: auto;
+        font-size: 1.8rem;
+        padding: 1rem;
+        border: none;
+    }
+   
+}
+
+@media screen and (min-width: 256px) and (max-width: 320px) {
+
+    .main-div {
+        width: 25rem;
+        padding: 2rem;
+    }
+
+    .img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .form-control {
+        width: 23rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    figcaption {
+        font-size: 1.5rem;
+    }
+
+    .add-items .fa-plus {
+        top: -3rem;
+        right: -9rem;
+        color: red;
+        font-size: 1.5rem;
+    }
+
+    .add-items .add-toggle-btn {
+        position: relative;
+        bottom: 3rem;
+        left: 9rem;
+        color: red;
+        font-size: 1.5rem;
+    }
+
+    .each-item {
+        width: 23rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .todo-btn .fa-pen-to-square {
+        top: 0.2rem;
+        left: 10rem;
+        font-size: 1.5rem;
+
+    }
+
+    .todo-btn .fa-trash {
+        top: 0.2rem;
+        left: 12rem;
+        font-size: 1.5rem;
+    }
+
+    .rm-items button {
+        width: auto;
+        font-size: 1.5rem;
+        padding: 1rem;
+        border: none;
+    }
+
+    .child-div {
+        line-height: 0rem;
+    }
+   
+}
