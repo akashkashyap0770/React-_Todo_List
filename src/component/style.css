@@ -78,6 +78,9 @@ figcaption {
 }
 
 .form-control {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     height: 5rem;
     width: 40rem;
     font-size: 2rem;
@@ -108,12 +111,19 @@ figcaption {
     margin-bottom: 3rem;
     font-size: 2rem;
     color: aliceblue;
-    background-color:purple;
+    background-color: purple;
 }
 
 .each-item h3 {
     display: flex;
-    padding-left: 1.2rem;
+    padding-left: 1rem;
+}
+
+.text1 {
+    width: 28rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .rm-items button {
@@ -168,9 +178,24 @@ figcaption {
         width: 6rem;
     }
 
-    .form-control {
+    /* .form-control {
         width: 30rem;
         font-size: 1.5rem;
+    } */
+
+    .form-control {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+
+    .text1 {
+        width: 20rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     .each-item {
@@ -185,7 +210,7 @@ figcaption {
     .todo-btn .fa-trash {
         left: 12rem;
     }
-   
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 468px) {
@@ -200,9 +225,20 @@ figcaption {
     }
 
     .form-control {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         width: 25rem;
         height: 4rem;
         font-size: 1.3rem;
+    }
+
+    .text1 {
+        width: 18rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 1rem;
     }
 
     .add-items .fa-plus {
@@ -212,7 +248,8 @@ figcaption {
     }
 
     .add-items .add-toggle-btn {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        right: 3rem;
     }
 
     .each-item {
@@ -222,14 +259,14 @@ figcaption {
     }
 
     .todo-btn .fa-pen-to-square {
-        left: 8rem;
-        font-size: 1.8rem;
+        left: 9rem;
+        font-size: 1.5rem;
 
     }
 
     .todo-btn .fa-trash {
         left: 10rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .rm-items button {
@@ -238,7 +275,7 @@ figcaption {
         padding: 1rem;
         border: none;
     }
-   
+
 }
 
 @media screen and (min-width: 256px) and (max-width: 320px) {
@@ -254,9 +291,21 @@ figcaption {
     }
 
     .form-control {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         width: 23rem;
         height: 3.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .text1 {
+        padding: 0.5rem;
+        width: 16rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 1.1rem;
     }
 
     figcaption {
@@ -266,7 +315,6 @@ figcaption {
     .add-items .fa-plus {
         top: -3rem;
         right: -9rem;
-        color: red;
         font-size: 1.5rem;
     }
 
@@ -274,7 +322,6 @@ figcaption {
         position: relative;
         bottom: 3rem;
         left: 9rem;
-        color: red;
         font-size: 1.5rem;
     }
 
@@ -289,14 +336,14 @@ figcaption {
 
     .todo-btn .fa-pen-to-square {
         top: 0.2rem;
-        left: 10rem;
+        left: 1rem;
         font-size: 1.5rem;
 
     }
 
     .todo-btn .fa-trash {
         top: 0.2rem;
-        left: 12rem;
+        left: 2rem;
         font-size: 1.5rem;
     }
 
@@ -310,5 +357,5 @@ figcaption {
     .child-div {
         line-height: 0rem;
     }
-   
+
 }
